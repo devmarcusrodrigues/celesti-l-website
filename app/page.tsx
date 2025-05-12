@@ -1359,7 +1359,7 @@ export default function Home() {
           </div>
           <div className="mt-4 text-center text-sm text-muted-foreground">© The Infinity Works, 2025</div>
           <div className="mt-2 text-center text-xs text-muted-foreground">
-            We do not agree with the monetary use of AI-generated images. All character art was generated with AI only because we did not have an available artist.
+            We do not agree with the monetary use of AI-generated images. All art was generated with AI only because we did not have an available artist.
           </div>
         </div>
       </footer>
