@@ -37,6 +37,8 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTr
 import { useTheme } from "@/components/theme-provider"
 import { Badge } from "@/components/ui/badge"
 import { useMobile } from "@/hooks/use-mobile"
+import RuinsAesthetics from "@/src/pages/RuinsAesthetics"
+import EnvironmentDesign from "@/src/pages/EnvironmentDesign"
 
 // Character data for optimization and single source of truth
 const CHARACTERS = [
@@ -735,9 +737,11 @@ export default function Home() {
                           <div className="relative h-40 rounded-lg overflow-hidden mb-6">
                             <div className="absolute inset-0 ruins-environment-preview"></div>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
-                              <div className="p-3">
-                                <span className="text-sm font-medium">Observatory Concept Art</span>
-                              </div>
+                              <EnvironmentDesign>
+                                <div className="p-3">
+                                  <span className="text-sm font-medium">Observatory Concept Art</span>
+                                </div>
+                              </EnvironmentDesign>
                             </div>
                           </div>
 
@@ -873,9 +877,11 @@ export default function Home() {
                           <div className="relative h-40 rounded-lg overflow-hidden mb-6">
                             <div className="absolute inset-0 ruins-preview"></div>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                            <RuinsAesthetics>
                               <div className="p-3">
                                 <span className="text-sm font-medium">Ancient Observatory Interior</span>
                               </div>
+                            </RuinsAesthetics>
                             </div>
                           </div>
 
